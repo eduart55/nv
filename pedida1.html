@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedida.css">
+    <title>Document</title>
+</head>
+<body class="box">
+    <div id="todo">
+   <center><h1>¿Quieres ser mi novia?</h1><br>
+   <img src="image.png" alt="">
+</center>
+   <br><br><br><br>
+<center>
+   <a href="si.html"><button class="bn1" ><h2>SI</h2></button></a>
+   <button class="bn2" onmouseenter="noquiere(event)" onclick="alerta()"><h2>NO</h2></button>
+</center>
+
+</div>
+<script>
+    function noquiere(evt){
+        let target = evt.target;
+        let maxWidth = window.innerWidth;
+        let maxHeight = window.innerHeight;
+
+        let randomWidth = getRandomInt(0, maxWidth - target.offsetWidth);
+        let randomHeight = getRandomInt(0, maxHeight - target.offsetHeight);
+
+        target.style.position = 'absolute';
+        target.style.top = randomHeight + 'px';
+        target.style.left = randomWidth + 'px';
+
+        
+            }
+             function getRandomInt(min, max){
+              return Math.floor (Math.random() * (max - min)) + min;
+             }
+
+             function alerta(){
+                swal({
+                title:"per yo te amo",
+                text:"DI QUE SIII",
+                button:"INTENTALO DE NUEVO"
+             });
+             }
+          
+</script>
+
+</body>
+</html>

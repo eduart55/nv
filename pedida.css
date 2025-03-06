@@ -1,0 +1,29 @@
+.box{
+    background-color: bisque;
+}
+.bn1{
+    background-color: rgb(0, 255, 106);
+    border: none;
+    height: 80px;
+    width: 130px;
+
+}
+
+.bn2{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    height: 80px;
+    width: 130px;
+
+}
+.no-gif, .efecto:hover .gif{
+    display: flex;
+}
+.gif, .efecto:hover .no-gif{
+    display: none;
+}
+@media(max-width:300px){
+    .box{
+        display: none;
+    }
+}
